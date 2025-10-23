@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary-color: #6366f1;
+            --primary-color: #12743bff;
             --secondary-color: #8b5cf6;
             --success-color: #10b981;
             --danger-color: #ef4444;
@@ -18,9 +18,17 @@
         }
         
         body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #100e36ff 0%, #065f46 25%, #047857 50%, #059669 75%, #10b981 100%);
+            background-size: 400% 400%;
+            animation: greenGradient 15s ease infinite;
             min-height: 100vh;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        @keyframes greenGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         
         .main-card {
@@ -30,10 +38,11 @@
         }
         
         .header-section {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            background: linear-gradient(135deg, #0c5431ff 0%, #0e321eff 50%, #113f1bff 100%);
             color: white;
             padding: 2rem;
             border-radius: 20px 20px 0 0;
+            box-shadow: 0 4px 20px rgba(20, 95, 18, 0.4);
         }
         
         .search-filter-section {
@@ -116,7 +125,7 @@
         }
         
         .modal-header {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            background: linear-gradient(135deg, #0a3d27ff 0%, #3730a3 50%, #4c1d95 100%);
             color: white;
             border-radius: 15px 15px 0 0;
         }

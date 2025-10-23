@@ -15,9 +15,17 @@
         }
         
         body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #064e3b 0%, #065f46 25%, #047857 50%, #059669 75%, #10b981 100%);
+            background-size: 400% 400%;
+            animation: greenGradient 15s ease infinite;
             min-height: 100vh;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        @keyframes greenGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         
         .detail-card {
@@ -28,9 +36,10 @@
         }
         
         .detail-header {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            background: linear-gradient(135deg, #1e40af 0%, #3730a3 50%, #4c1d95 100%);
             color: white;
             padding: 3rem 2rem;
+            box-shadow: 0 4px 20px rgba(30, 64, 175, 0.4);
         }
         
         .status-badge {
@@ -180,7 +189,7 @@
 <div class="modal fade" id="editTodo" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content" style="border-radius: 15px;">
-            <div class="modal-header" style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); color: white; border-radius: 15px 15px 0 0;">
+            <div class="modal-header" style="background: linear-gradient(135deg, #1e40af 0%, #3730a3 50%, #4c1d95 100%); color: white; border-radius: 15px 15px 0 0; box-shadow: 0 4px 20px rgba(30, 64, 175, 0.4);">
                 <h5 class="modal-title"><i class="fas fa-edit"></i> Ubah Todo</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>

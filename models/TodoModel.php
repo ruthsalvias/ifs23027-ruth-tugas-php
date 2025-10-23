@@ -34,7 +34,7 @@ class TodoModel
             $paramCount++;
         }
 
-        $query .= ' ORDER BY sort_order ASC, created_at DESC';
+        $query .= ' ORDER BY sort_order DESC, created_at DESC';
 
         $result = pg_query_params($this->conn, $query, $params);
         $todos = [];
